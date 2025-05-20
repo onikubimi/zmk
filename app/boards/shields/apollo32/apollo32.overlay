@@ -7,7 +7,7 @@
 
 / {
     compatible = "zmk,shield";
-    label = "your_keyboard_name_shield"; // あなたのシールドのラベル
+    label = "apollo32"; // あなたのシールドのラベル
 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
