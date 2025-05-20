@@ -1,0 +1,62 @@
+config SHIELD_APOLLO32
+    def_bool y
+    depends on ZMK_SHIELD
+    select ZMK_KEYMAP
+    select ZMK_TRANSPORT
+    # select ZMK_DISPLAY # If you have a display
+    imply ZMK_WIDGET_OUTPUT_STATUS # Example widget
+    imply ZMK_WIDGET_BATTERY_STATUS # Example widget
+    imply ZMK_WIDGET_LAYER_STATUS # Example widget
+    imply ZMK_WIDGET_MODIFIER_STATUS # Example widget
+    imply ZMK_KEYMAP_DEFAULT
+    imply ZMK_COMBO_RESET
+    imply ZMK_MOUSE
+    imply ZMK_SLEEP
+    imply ZMK_TAP_DANCE
+    imply ZMK_SENSOR_LIS3DH
+    imply ZMK_SPLIT_ROLE_CENTRAL # If it's the central side of a split keyboard
+    imply ZMK_SPLIT_ROLE_PERIPHERAL # If it's the peripheral side
+    imply ZMK_BLUETOOTH
+    imply ZMK_HID_KEYBOARD
+    imply ZMK_BT_TRANSPORT_HOGP
+    # imply ZMK_USB # If you want USB support
+    # imply ZMK_USB_TRANSPORT_CDC_ACM # Or other USB transport
+    config BOARD_ENABLE_D0
+        default y
+    config BOARD_ENABLE_D1
+        default y
+    config BOARD_ENABLE_D2
+        default y
+    config BOARD_ENABLE_D4
+        default y
+    config BOARD_ENABLE_D5
+        default y
+    config BOARD_ENABLE_D6
+        default y
+    config BOARD_ENABLE_D7
+        default y
+    config BOARD_ENABLE_D8
+        default y
+    config BOARD_ENABLE_D9
+        default y
+    config BOARD_ENABLE_D10
+        default y
+    config BOARD_ENABLE_D14
+        default y
+    config BOARD_ENABLE_D15
+        default y
+    config BOARD_ENABLE_D16
+        default y
+    config BOARD_ENABLE_D18
+        default y
+    config BOARD_ENABLE_D20
+        default y
+    config BOARD_ENABLE_D21
+        default y
+    config BOARD_ENABLE_D22
+        default y
+    config BOARD_ENABLE_D24
+        default y
+    config BOARD_ENABLE_D31
+        default y
+    source "boards/arm/nice_nano/nice_nano_v2_defconfig" # 追記または修正
